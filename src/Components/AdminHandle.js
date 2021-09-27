@@ -36,7 +36,7 @@ rejectLeave=(e)=>{
     var arr=JSON.parse(localStorage.getItem('leaveApplication'))
     
     for(var i=0;i<arr.length;i++){
-        if(arr[i].App_id==person){
+        if(arr[i].App_id===person){
             arr[i].status='Rejected'
             this.setState({
                 allviewApplication:arr
